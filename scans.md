@@ -60,3 +60,22 @@ SMB scripts confirm Samba 3.0.20 (legacy version)
 Message signing disabled → insecure configuration
 
 Confirms target is a vulnerable Linux VM in the isolated lab
+
+## 🛡️ 03 - Vulnerability Scan with Nmap Scripts
+**Objective:** Identify known vulnerabilities using automated Nmap scripts.
+
+### 🔧 Command Used
+```bash
+nmap --script vuln 192.168.56.103
+```
+Output
+
+<img width="801" height="694" alt="nmap --script vuln" src="https://github.com/user-attachments/assets/6ff4185d-c553-43d6-be66-234ba73c0374" />
+
+📝 Notes
+
+FTP (21): vsFTPd 2.3.4 backdoor detected → exploitable root shell (CVE-2011-2523)
+
+SSH / Telnet / SMTP / others: No immediate vulnerabilities flagged by this scan
+
+Prioritize FTP for the exploitation phase with Metasploit
