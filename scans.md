@@ -16,7 +16,7 @@ nmap -sS -sV -T4 <192.168.56.103>
 
 <img width="802" height="702" alt="Initial nmap Scan" src="https://github.com/user-attachments/assets/a92797fc-7bfa-41be-9d30-187e0c517070" />
 
-📝 Notes
+### 📝 Notes
 Lots of exposed services → this is a deliberately vulnerable machine.
 
 FTP (21 & 2121): Both standard vsftpd and ProFTPD are running → good future targets for enumeration.
@@ -49,7 +49,7 @@ nmap -A 192.168.56.103
 
 <img width="802" height="698" alt="nmap -A" src="https://github.com/user-attachments/assets/3bde9b6b-8cb9-4879-82ef-ed46a53c7512" />
 
-📝 Takeaways
+### 📝 Notes
 
 OS detected as Linux kernel 2.6.x (outdated)
 
@@ -68,11 +68,11 @@ Confirms target is a vulnerable Linux VM in the isolated lab
 ```bash
 nmap --script vuln 192.168.56.103
 ```
-Output
+🧾 Output
 
 <img width="801" height="694" alt="nmap --script vuln" src="https://github.com/user-attachments/assets/6ff4185d-c553-43d6-be66-234ba73c0374" />
 
-📝 Notes
+### 📝 Notes
 
 FTP (21): vsFTPd 2.3.4 backdoor detected → exploitable root shell (CVE-2011-2523)
 
