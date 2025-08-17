@@ -1,4 +1,4 @@
-# 🔐 Cybersecurity Home Lab – Kali Linux & Metasploitable2
+# Cybersecurity Home Lab – Kali Linux & Metasploitable2
 
 This project documents the creation and use of a self-contained penetration testing lab using **VirtualBox**, **Kali Linux**, and **Metasploitable2**. The environment simulates real-world attack scenarios in an isolated and legally safe environment.
 
