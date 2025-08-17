@@ -1,0 +1,77 @@
+### setup/virtualbox-setup.md
+# VirtualBox Installation
+
+1. Download the latest version of **VirtualBox** from https://www.virtualbox.org/.
+2. Install VirtualBox using default installation settings.
+3. (Optional) Install the Extension Pack for additional USB and network features.
+4. Verify VirtualBox is working by launching it from the desktop/start menu.
+
+---
+
+### setup/kali-setup.md
+# Kali Linux Setup
+
+1. Download the Kali Linux VirtualBox image from https://www.kali.org.
+2. Open VirtualBox → **File → Import Appliance**, then select the `.ova` file.
+3. Start the VM and log in using the default credentials:
+
+Username: kali
+Password: kali
+
+sql
+Copy
+Edit
+
+4. Run the following command to update tools:
+```bash
+sudo apt update && sudo apt upgrade -y
+setup/metasploitable-setup.md
+Metasploitable2 Setup
+Download the Metasploitable2 VirtualBox image from the official Rapid7 source.
+
+Extract the .zip file and import the VM into VirtualBox.
+
+Start the VM.
+
+Default credentials:
+
+makefile
+Copy
+Edit
+Username: msfadmin
+Password: msfadmin
+setup/networking.md
+Networking Configuration (Host-Only Adapter)
+Both VMs must be placed on the same isolated host-only network.
+
+Step-by-Step
+Shut down Kali and Metasploitable2 VMs.
+
+In VirtualBox, go to Preferences → Network → Host-Only Networks.
+
+Verify that a Host-Only network exists (e.g. vboxnet0).
+
+Select Kali Linux → Settings → Network:
+
+Adapter 1 → Attached to: Host-Only Adapter
+
+Repeat the same settings for Metasploitable2.
+
+Start both VMs.
+
+Verify connectivity:
+
+On Kali:
+
+bash
+Copy
+Edit
+ip addr
+ping <TARGET_IP>
+On Metasploitable2:
+
+bash
+Copy
+Edit
+ifconfig
+ping <KALI_IP>
