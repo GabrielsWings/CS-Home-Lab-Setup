@@ -1,5 +1,6 @@
 ### setup/virtualbox-setup.md
 # VirtualBox Installation
+> Step-by-step instructions for installing VirtualBox on your host machine.
 
 1. Download the latest version of **VirtualBox** from https://www.virtualbox.org/.
 2. Install VirtualBox using default installation settings.
@@ -10,6 +11,7 @@
 
 ### setup/kali-setup.md
 # Kali Linux Setup
+> Instructions for importing and configuring Kali Linux in VirtualBox.
 
 1. Download the Kali Linux VirtualBox image from https://www.kali.org.
 2. Open VirtualBox → **File → Import Appliance**, then select the `.ova` file.
@@ -18,60 +20,51 @@
 Username: kali
 Password: kali
 
-sql
-Copy
-Edit
+4. Update Kali tools:
 
-4. Run the following command to update tools:
 ```bash
 sudo apt update && sudo apt upgrade -y
-setup/metasploitable-setup.md
+
+03-metasploitable-setup.md
 Metasploitable2 Setup
-Download the Metasploitable2 VirtualBox image from the official Rapid7 source.
+Instructions for importing and configuring Metasploitable2 in VirtualBox.
 
-Extract the .zip file and import the VM into VirtualBox.
+1. Download the Metasploitable2 VirtualBox image from the official Rapid7 source.
 
-Start the VM.
+2. Extract the .zip file and import the VM into VirtualBox.
 
-Default credentials:
+3. Start the VM.
 
-makefile
-Copy
-Edit
+4. Default credentials:
+
 Username: msfadmin
 Password: msfadmin
-setup/networking.md
+
+04-networking.md
+
 Networking Configuration (Host-Only Adapter)
-Both VMs must be placed on the same isolated host-only network.
+Setup instructions for connecting Kali Linux and Metasploitable2 in an isolated network.
 
-Step-by-Step
-Shut down Kali and Metasploitable2 VMs.
+1. Shut down Kali and Metasploitable2 VMs.
 
-In VirtualBox, go to Preferences → Network → Host-Only Networks.
+2. In VirtualBox, go to Preferences → Network → Host-Only Networks.
 
 Verify that a Host-Only network exists (e.g. vboxnet0).
 
-Select Kali Linux → Settings → Network:
+3. Select Kali Linux → Settings → Network:
 
 Adapter 1 → Attached to: Host-Only Adapter
 
-Repeat the same settings for Metasploitable2.
+4. Repeat the same settings for Metasploitable2.
 
-Start both VMs.
+5. Start both VMs.
 
-Verify connectivity:
+6. Verify connectivity:
 
 On Kali:
-
-bash
-Copy
-Edit
 ip addr
 ping <TARGET_IP>
-On Metasploitable2:
 
-bash
-Copy
-Edit
+On Metasploitable2:
 ifconfig
 ping <KALI_IP>
