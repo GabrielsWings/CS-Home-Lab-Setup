@@ -60,12 +60,12 @@
 
     ```bash
     ip addr
-    ping <TARGET_IP>
+    ping <192.168.56.102>
     ```
 
     **On Metasploitable2:**
 
     ```bash
     ifconfig
-    ping <KALI_IP>
+    ping <192.168.56.101>
     ```
