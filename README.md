@@ -7,7 +7,7 @@ This project documents the creation and use of a self-contained penetration test
 ## 🧭 Objectives
 
 - Build a controlled virtual lab for security testing and experimentation  
-- Practice network scanning and service enumeration with Nmap  
+- Practice network scanning and OS/service detection with Nmap  
 - Create detailed technical documentation suitable for a professional portfolio
 
 ---
@@ -18,8 +18,8 @@ This project documents the creation and use of a self-contained penetration test
 [Host Machine]
 │
 ├── VirtualBox
-│   ├── Kali Linux (Attacker) – <192.168.56.101>
-│   └── Metasploitable2 (Target) – <192.168.56.102>
+│ ├── Kali Linux (Attacker) – <192.168.56.101>
+│ └── Metasploitable2 (Target) – <192.168.56.103>
 │
 └── Host-Only Network (Isolated)
 ```
@@ -40,7 +40,7 @@ This project documents the creation and use of a self-contained penetration test
 1. **VirtualBox** installed on host system  
 2. **Kali Linux** and **Metasploitable2** VMs imported  
 3. **Host-Only Adapter** configured for isolated communication  
-4. Verified network connectivity between <KALI_IP> and <TARGET_IP>
+4. Verified network connectivity between Kali Linux and Metasploitable2
 
 ---
 
@@ -49,18 +49,20 @@ This project documents the creation and use of a self-contained penetration test
 cybersecurity-homelab/
 │
 ├── setup/
-│   ├── virtualbox-setup.md
-│   ├── kali-setup.md
-│   ├── metasploitable-setup.md
-│   └── networking.md
+│ ├── virtualbox-setup.md
+│ ├── kali-setup.md
+│ ├── metasploitable-setup.md
+│ └── networking.md
 │
 ├── scans/
-│   ├── nmap-initial.md
-│   ├── service-discovery.md
+│ ├── 01-nmap-initial.md
+│ ├── 02-nmap-aggressive.md
+│ └── 03-nmap-vuln-scan.md
 │
 └── screenshots/
-    ├── kali-desktop.png
-    ├── nmap-results.png
+├── nmap-initial.png
+├── nmap-aggressive.png
+└── nmap-vuln-scan.png
 ```
 
 ---
