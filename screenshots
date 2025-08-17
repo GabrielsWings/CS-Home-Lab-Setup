@@ -1,8 +1,0 @@
-/my-lab-project
-    /screenshots
-        nmap-initial.png
-        nmap-aggressive.png
-        nmap-vuln.png
-    scans.md
-    setup.md
-    README.md
