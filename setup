@@ -17,13 +17,18 @@
 2. Open VirtualBox → **File → Import Appliance**, then select the `.ova` file.
 3. Start the VM and log in using the default credentials:
 
+```
 Username: kali
 Password: kali
+```
 
 4. Update Kali tools:
 
 ```bash
 sudo apt update && sudo apt upgrade -y
+```
+
+---
 
 03-metasploitable-setup.md
 Metasploitable2 Setup
@@ -37,8 +42,10 @@ Instructions for importing and configuring Metasploitable2 in VirtualBox.
 
 4. Default credentials:
 
+```
 Username: msfadmin
 Password: msfadmin
+```
 
 04-networking.md
 
@@ -62,9 +69,14 @@ Adapter 1 → Attached to: Host-Only Adapter
 6. Verify connectivity:
 
 On Kali:
+
+```bash   
 ip addr
 ping <TARGET_IP>
+```
 
 On Metasploitable2:
+```bash 
 ifconfig
 ping <KALI_IP>
+```
