@@ -14,7 +14,7 @@ nmap -sS -sV -T4 <192.168.56.103>
 
 🧾 Output
 
-![Initial Nmap Scan](../screenshots/nmap-initial-scan.png)
+<img width="802" height="702" alt="Initial nmap Scan" src="https://github.com/user-attachments/assets/a92797fc-7bfa-41be-9d30-187e0c517070" />
 
 📝 Notes
 Lots of exposed services → this is a deliberately vulnerable machine.
@@ -37,43 +37,17 @@ VNC (5900): Possible unauthenticated access.
 
 Overall → This system is highly vulnerable and contains several attack surfaces for future exploitation.
 
-⚡ 02 – Aggressive Nmap Scan
+## ⚡ 02 – Aggressive Nmap Scan
 
 Objective: Perform OS detection and gather additional details using default Nmap scripts.
 
-🔧 Command Used
+### 🔧 Command Used
 ```bash
 nmap -A 192.168.56.103
 ```
 🧾 Output
 
-AC Address: 08:00:27:43:6F:7C (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
-Device type: general purpose
-Running: Linux 2.6.X
-OS CPE: cpe:/o:linux:linux_kernel:2.6
-OS details: Linux 2.6.9 - 2.6.33
-Network Distance: 1 hop
-Service Info: Hosts:  metasploitable.localdomain, irc.Metasploitable.LAN; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
-
-Host script results:
-| smb-os-discovery: 
-|   OS: Unix (Samba 3.0.20-Debian)
-|   Computer name: metasploitable
-|   NetBIOS computer name: 
-|   Domain name: localdomain
-|   FQDN: metasploitable.localdomain
-|_  System time: 2025-08-17T17:27:58-04:00
-|_clock-skew: mean: 1h00m00s, deviation: 2h00m00s, median: 0s
-|_smb2-time: Protocol negotiation failed (SMB2)
-| smb-security-mode: 
-|   account_used: guest
-|   authentication_level: user
-|   challenge_response: supported
-|_  message_signing: disabled (dangerous, but default)
-|_nbstat: NetBIOS name: METASPLOITABLE, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
-
-
-📸 Screenshot: Take a screenshot of the output section showing the OS detection and Nmap script results (e.g. “OS details: Linux 2.6.9 – 2.6.33”, “smb-os-discovery”, etc.)
+<img width="802" height="698" alt="nmap -A" src="https://github.com/user-attachments/assets/3bde9b6b-8cb9-4879-82ef-ed46a53c7512" />
 
 📝 Takeaways
 
