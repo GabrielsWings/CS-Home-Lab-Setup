@@ -1,4 +1,3 @@
-### setup/virtualbox-setup.md
 # VirtualBox Installation
 > Step-by-step instructions for installing VirtualBox on your host machine.
 
@@ -9,7 +8,6 @@
 
 ---
 
-### setup/kali-setup.md
 # Kali Linux Setup
 > Instructions for importing and configuring Kali Linux in VirtualBox.
 
