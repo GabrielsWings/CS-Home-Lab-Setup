@@ -1,14 +1,13 @@
 # Cybersecurity Home Lab – Kali Linux & Metasploitable2
 
-This project documents the creation and use of a self-contained penetration testing lab using **VirtualBox**, **Kali Linux**, and **Metasploitable2**. The environment simulates real-world attack scenarios in an isolated and legally safe environment.
+This project documents the creation and use of a self-contained penetration testing lab using VirtualBox, Kali Linux, and Metasploitable2. The lab focuses on **network reconnaissance and scanning** using Nmap in an isolated, safe environment.
 
 ---
 
 ## 🧭 Objectives
 
 - Build a controlled virtual lab for security testing and experimentation  
-- Practice reconnaissance, enumeration, and exploitation techniques  
-- Utilize industry-standard tools such as **Nmap** and **Metasploit**  
+- Practice network scanning and service enumeration with Nmap  
 - Create detailed technical documentation suitable for a professional portfolio
 
 ---
@@ -28,12 +27,12 @@ This project documents the creation and use of a self-contained penetration test
 ---
 
 ## ⚙ Tools & Technologies
-| Category           | Tools / Technologies                                  |
-|--------------------|------------------------------------------------------|
-| Networking         | Nmap, Wireshark, TCP/IP                               |
-| Endpoint           | Kali Linux, Windows 11 (host), Metasploitable2        |
-| SIEM               | (Planned) Splunk / Wazuh                              |
-| Offensive Tools    | Metasploit Framework, Burp Suite                      |
+| Category           | Tools / Technologies            |
+|--------------------|--------------------------------|
+| Virtualization     | VirtualBox                     |
+| Attacker OS        | Kali Linux                     |
+| Target OS          | Metasploitable2                |
+| Reconnaissance     | Nmap                           |
 
 ---
 
@@ -42,16 +41,6 @@ This project documents the creation and use of a self-contained penetration test
 2. **Kali Linux** and **Metasploitable2** VMs imported  
 3. **Host-Only Adapter** configured for isolated communication  
 4. Verified network connectivity between <KALI_IP> and <TARGET_IP>
-
----
-
-## 📌 Penetration Testing Workflow
-| Phase              | Description |
-|-------------------|-------------|
-| **Scanning**       | Identify open ports using `nmap` |
-| **Enumeration**    | Gather service information and version details |
-| **Exploitation**   | Launch targeted exploits using Metasploit |
-| **Post-Exploitation** | Access target system and collect artifacts |
 
 ---
 
@@ -69,13 +58,9 @@ cybersecurity-homelab/
 │   ├── nmap-initial.md
 │   ├── service-discovery.md
 │
-├── exploits/
-│   ├── msfconsole-walkthrough.md
-│
 └── screenshots/
     ├── kali-desktop.png
     ├── nmap-results.png
-    └── exploit-success.png
 ```
 
 ---
