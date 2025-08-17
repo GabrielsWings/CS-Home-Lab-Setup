@@ -19,8 +19,8 @@ This project documents the creation and use of a self-contained penetration test
 [Host Machine]
 │
 ├── VirtualBox
-│   ├── Kali Linux (Attacker) – <KALI_IP>
-│   └── Metasploitable2 (Target) – <TARGET_IP>
+│   ├── Kali Linux (Attacker) – <192.168.56.101>
+│   └── Metasploitable2 (Target) – <192.168.56.102>
 │
 └── Host-Only Network (Isolated)
 ```
