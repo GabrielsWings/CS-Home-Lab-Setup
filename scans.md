@@ -14,7 +14,7 @@ nmap -sS -sV -T4 <192.168.56.103>
 
 🧾 Output
 
-<img width="802" height="702" alt="Initial nmap Scan" src="https://github.com/user-attachments/assets/a92797fc-7bfa-41be-9d30-187e0c517070" />
+![image alt] (https://github.com/GabrielsWings/CS-Home-Lab-Setup/blob/756c95a3b4ab57180751060bb5dbf1a51d380d47/Initial%20nmap%20Scan.png)
 
 ### 📝 Notes
 Lots of exposed services → this is a deliberately vulnerable machine.
