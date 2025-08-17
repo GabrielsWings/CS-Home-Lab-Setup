@@ -9,7 +9,7 @@
 
 ### 🔧 Command Used
 ```bash
-nmap -sS -sV -T4 <TARGET_IP>
+nmap -sS -sV -T4 <192.168.56.102>
 ```
 
 🧾 Example Output
@@ -38,7 +38,7 @@ Objective: Collect detailed service-level data to identify potential attack vect
 ### 📁 FTP Enumeration
 
 ```bash
-ftp <TARGET_IP>
+ftp <192.168.56.102>
 ```
 
 Anonymous login successful
@@ -47,7 +47,7 @@ Able to upload/download files — possible foothold
 
 ## 🌐 HTTP Enumeration
 ```bash
-nikto -h <TARGET_IP>
+nikto -h <192.168.56.102>
 ```
 
 Discovered default pages
@@ -56,7 +56,7 @@ Detected known vulnerabilities in Apache 2.2.8
 
 ## 🔐 SSH Enumeration
 ```bash
-ssh -v <TARGET_IP>
+ssh -v <192.168.56.102>
 ```
 
 Extracted version info for potential exploit matching
@@ -66,7 +66,7 @@ Objective: Identify known vulnerabilities using automated tools.
 
 ## 🔧 Nmap Vulnerability Script
 ```bash
-nmap --script vuln <TARGET_IP>
+nmap --script vuln <192.168.56.102>
 ```
 🧾 Key Findings
 vsftpd 2.3.4: Backdoor vulnerability (shell access possible)
